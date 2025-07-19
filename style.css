@@ -115,7 +115,7 @@ section{
         text-align: center;
 
     }
-    .baaer-img{
+    .banner-img img{
         width: 100%;
     }
     .banner-title{
@@ -177,18 +177,45 @@ section{
     font-size: 1.5rem;
 }
 
+/* feature section */
+
+.feature-title{
+    color: #0A0826;
+    font-size: 2.25;
+    font-weight: 700;
+}
+
+.feature-description{
+    color:6C6C6C;
+    font-weight: bold;
+}
+
+.feature-container{
+    display: flex;
+    margin-top: 150px;
+    gap: 96px;
+    align-items: center;
+}
+.feature-content{
+
+}
+
+
 
 @media screen and (max-width:576px){
 
     .sponsor-container{
         grid-template-columns: repeat(4 ,1fr);
-        row-gap: 30px;
-        justify-items: center;
         justify-content: center;
     }
+
     .collection-container{
         grid-template-columns: repeat(1 , 1fr);
         justify-items: center;
+    }
+
+    .feature-container{
+        flex-direction: column-reverse;
     }
 }
 
